@@ -1,4 +1,4 @@
-/* register.css */
+/* css/register.css */
 
 * {
   box-sizing: border-box;
@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  background: #ffffffcc; /* สีขาวโปร่งแสง */
+  background: #ffffffcc;
   padding: 40px 30px;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(18, 118, 5, 0.3);
@@ -53,8 +53,10 @@ form {
   align-items: center;
 }
 
+.input,
 form input[type="text"],
 form input[type="email"],
+form input[type="tel"],
 form input[type="password"] {
   width: 100%;
   max-width: 300px;
@@ -69,8 +71,10 @@ form input[type="password"] {
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 
+.input:focus,
 form input[type="text"]:focus,
 form input[type="email"]:focus,
+form input[type="tel"]:focus,
 form input[type="password"]:focus {
   outline: none;
   background-color: #d0f0dc;
@@ -100,6 +104,7 @@ form input[type="password"]:focus {
   margin-top: 30px;
   display: flex;
   justify-content: center;
+  gap: 10px;
 }
 
 .btn.btn-tline {
@@ -115,16 +120,14 @@ form input[type="password"]:focus {
   color: #ffffff;
 }
 
-/* Responsive สำหรับมือถือ */
+/* Responsive */
 @media (max-width: 400px) {
   .container {
     padding: 30px 20px;
     max-width: 90%;
   }
 
-  form input[type="text"],
-  form input[type="email"],
-  form input[type="password"],
+  .input,
   .btn {
     max-width: 100%;
   }

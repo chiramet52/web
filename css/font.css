@@ -123,7 +123,7 @@ form input[type="password"]:focus {
   }
 
   form input[type="text"],
-  form input[type="email"],
+  form input[type="tel"],
   form input[type="password"],
   .btn {
     max-width: 100%;
